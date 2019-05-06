@@ -3,7 +3,7 @@ def prime?(i)
      return false
     end
     prime_test = (2...i).to_a
-    prime_test.any?{|n| i % n == 0}
+    prime_test.all?{|n| i % n != 0}
 end
 
   
