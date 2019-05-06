@@ -3,6 +3,7 @@ def prime?(i)
      return false
     end
     prime_test = (2...i).to_a
+    prime_test.any?
 end
 
   
